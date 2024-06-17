@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './styles.css';  // Import custom styles
 
-const PasswordRecoveryPage = () => {
+const PasswordRecoveryPage = ({ setCurrentPage }) => {
   return (
     <div className="container">
       <div className="row justify-content-center">
@@ -26,7 +26,7 @@ const PasswordRecoveryPage = () => {
                 </div>
                 <button type="submit" className="btn btn-custom btn-block">Send Recovery Link</button>
                 <div className="text-center mt-3">
-                  <a href="/login" className="custom-link">Back to Login</a>
+                  <button className="custom-link" onClick={() => setCurrentPage('login')}>Back to Login</button>
                 </div>
               </form>
             </div>

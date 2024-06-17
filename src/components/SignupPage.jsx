@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import './styles.css';  // Import custom styles
 
-const SignupPage = () => {
+const SignupPage = ({ setCurrentPage }) => {
   return (
     <div className="container">
       <div className="row justify-content-center">
@@ -48,7 +48,7 @@ const SignupPage = () => {
                 </div>
                 <button type="submit" className="btn btn-custom btn-block">Sign Up</button>
                 <div className="text-center mt-3">
-                  <a href="/login" className="custom-link">Already have an account? Login</a>
+                  <button className="custom-link" onClick={() => setCurrentPage('login')}>Already have an account? Login</button>
                 </div>
               </form>
             </div>
