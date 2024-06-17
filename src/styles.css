@@ -1,0 +1,26 @@
+/* styles.css */
+.btn-custom {
+  background-color: #FFCC08;
+  border-color: #FFCC08;
+  color: #fff;
+}
+
+.btn-custom:hover {
+  background-color: #e6b307;
+  border-color: #e6b307;
+}
+
+.custom-link {
+  color: #FFCC08;
+}
+
+.custom-link:hover {
+  color: #e6b307;
+  text-decoration: none;
+}
+
+.input-group-text {
+  background-color: #FFCC08;
+  border-color: #FFCC08;
+  color: #fff;
+}
